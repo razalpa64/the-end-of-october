@@ -160,7 +160,7 @@ export default function AfterYou() {
   }, []);
 
   return (
-    <section ref={secRef} id="after-you" className="relative h-[240svh]" aria-label="My life after you">
+    <section ref={secRef} id="after-you" className="relative h-[600svh]" aria-label="My life after you">
       <Torn color="#E9DDC9" v={3} />
       <div
         ref={stageRef}
@@ -330,3 +330,4 @@ export default function AfterYou() {
     </section>
   );
 }
+
