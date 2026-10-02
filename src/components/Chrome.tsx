@@ -152,9 +152,9 @@ function useMusicBox() {
 }
 
 /* ───────── hybrid player: custom audio file if provided in /music/song.mp3, else synthesized music box ───────── */
-const MUSIC_PATH_MP3 = "/music/song.mp3";
-const MUSIC_PATH_M4A = "/music/song.m4a";
-const MUSIC_PATH_WAV = "/music/song.wav";
+const MUSIC_PATH_MP3 = `${import.meta.env.BASE_URL}music/song.mp3`;
+const MUSIC_PATH_M4A = `${import.meta.env.BASE_URL}music/song.m4a`;
+const MUSIC_PATH_WAV = `${import.meta.env.BASE_URL}music/song.wav`;
 
 function useAudioPlayer() {
   const synth = useMusicBox();
@@ -395,3 +395,4 @@ export function Nav({ visible }: { visible: boolean }) {
     </>
   );
 }
+
